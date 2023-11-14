@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.list-container {
+    display: flex;
+}
+.withoutMargin {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.redFont{
+    color: red;
+}
