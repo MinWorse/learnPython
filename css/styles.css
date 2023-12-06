@@ -1,7 +1,17 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all content */
     background: url('../color/bg.jpg') repeat
 }
+
+header h1 {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #ffffdf; /* Header background color */
+}
+
 .mainPage {
     text-align: center;
 }
@@ -14,38 +24,30 @@ body {
     text-align: center;
 }
 /* Reset list styles */
-.nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.navbar {
     display: flex;
-    justify-content: space-around;
-    background-color: #ffffdf;
+    flex-direction: column; /* Stack blocks vertically */
+    align-items: center; /* Center blocks horizontally */
 }
 
-.nav-menu li {
-    flex: 1;
-    text-align: center;
+.nav-block {
+    background-color: #fffbbf; /* Block background color */
+    margin: 10px 0; /* Add space between blocks */
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    text-decoration: none; /* Remove link underlines */
+    color: black; /* Text color for blocks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
-.nav-menu li a {
-    display: block;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-}
-
-.nav-menu li:hover {
-    background-color: #fffbbf;
+.nav-block:hover {
+    background-color: #f3f3f3; /* Color change on hover */
 }
 
 @media screen and (max-width: 600px) {
-    .nav-menu {
-        flex-direction: column;
-    }
-
-    .nav-menu li {
-        text-align: center;
-        width: 100%;
+    .nav-block {
+        width: 90%; /* Blocks take more width on smaller screens */
     }
 }
